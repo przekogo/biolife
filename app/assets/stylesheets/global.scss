@@ -65,3 +65,27 @@ body {
   transition: 0.4s;
   cursor: pointer;
 }
+
+.footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+#logo_beige img{
+  height: 100%;
+}
+#facebook {
+  margin-top: 55px;
+  margin-left: 10px;
+}
+.footnote {
+  min-width: 20%;
+  margin-top: 25px;
+  margin-right: 10%;
+}
+.articles {
+  height: 500px;
+}
+.footer-line {
+  border-color: $tertiary-color;
+}
