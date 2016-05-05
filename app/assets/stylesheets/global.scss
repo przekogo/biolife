@@ -17,6 +17,7 @@ body {
 }
 .slogan {
   font-size: 23px;
+  margin-top: $menu-height;
 }
 .contact, .slogan {
   background-color: $secondary-color;
@@ -32,10 +33,6 @@ body {
   height: $menu-height;
   background-color: $primary-color;
   font-family: $cinzel;
-}
-
-.content {
-  margin-top: $menu-height;
 }
 
 .cut {
@@ -85,12 +82,17 @@ body {
 }
 .footnote {
   min-width: 20%;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-right: 10%;
   font-size: 18px;
 }
+.content {
+  position: absolute;
+  top: 540px;
+  width: 100%;
+}
 .articles {
-  height: 500px;
+  height: 200px;
 }
 .footer-line {
   border-color: $tertiary-color;
