@@ -56,6 +56,10 @@ body {
   height: $menu-height;
 }
 
+.menuspan {
+  min-height: $menu-height;
+}
+
 .navbar-nav > li > a {
   height: 100%;
   line-height: 120px;
@@ -64,10 +68,15 @@ body {
   transition: 0.4s;
 }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover, .navbar-nav > li.active > a {
   background-color: $tertiary-color;
   color: $primary-color;
   cursor: pointer;
+}
+.navbar-nav > li > a:focus {
+  background-color: $tertiary-color;
+  color: $primary-color;
+  outline: 0;
 }
 
 .footer {

@@ -1,29 +1,7 @@
 .carousel.cut
   =render partial: 'carousel'
-=render partial: 'layouts/menubar'
+.container-fluid.header
+  =render partial: 'layouts/menubar', locals: {active: 'home'}
 .container.content
   =render partial: 'news', locals: {news: @news}
-.container-fluid.footer
-  #logo_beige
-    %img{src: 'assets/logo-bez.png'}
-  #facebook
-    %a#fb_background{href: 'https://www.facebook.com/BIO-Life-165676983633199', target: 'blank'}
-      %img{src: 'assets/facebook.png'}
-  .footnote.home-location
-    %strong
-      Siedziba firmy:
-    %hr.footer-line
-    Porucznika "Ostrego" 8
-    %br
-    26-600 Radom
-    %br
-    NIP 796-001-46-77
-  .footnote.sales-location
-    %strong
-      Salon wystawowy:
-    %hr.footer-line
-    ul.Strycharska 4a
-    %br
-    26-600 Radom
-    %br
-    tel. 48 385-72-58
+=render partial: 'layouts/footer'
