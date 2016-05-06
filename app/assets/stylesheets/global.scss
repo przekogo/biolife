@@ -1,6 +1,7 @@
 body {
   font-family: $cinzel;
   background-color: $primary-color;
+  font-color: $secondary-color;
 }
 
 .carousel {
@@ -117,6 +118,7 @@ body {
 .content {
   position: relative;
   width: 100%;
+  font-family: $josefin;
 }
 .articles {
   height: 200px;

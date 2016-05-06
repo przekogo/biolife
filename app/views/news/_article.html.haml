@@ -1,0 +1,10 @@
+.row
+  .col-md-8.col-md-offset-2
+    %h2
+      =article.title
+    %hr.article-hr
+.row
+  .col-md-9.col-md-offset-1.row
+    .col-md-6.imagebox.pull-right
+      %img{src: article.image}
+    =article.content

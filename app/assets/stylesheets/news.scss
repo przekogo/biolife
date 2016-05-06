@@ -1,0 +1,74 @@
+.newslist h2 {
+  text-align: center;
+  font-family: $cinzel;
+  margin: 10px 0 10px 0;
+  color: $tertiary-color;
+  font-weight: bold;
+}
+
+.snippet {
+  width: 100%;
+  font-family: $cinzel;
+  font-size: 22px;
+  color: $primary-color;
+  background-color: $secondary-color;
+  margin-left: 0px;
+  transition: 0.4s;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 3px 0px 3px 0;
+  line-height: 35px;
+}
+
+.snippet:hover {
+  color: $secondary-color;
+  background-color: $primary-color;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.snippet.active {
+  color: $tertiary-color;
+  background-color: $primary-color;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+.snippet .caret-right {
+  border-bottom: 18px solid transparent;
+  border-top: 18px solid transparent;
+  border-left: 18px solid;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+  float: left;
+}
+.snippet span {
+  text-decoration: none;
+  font-size: 13px;
+  float: right;
+}
+.article-hr {
+  border-color: $tertiary-color;
+}
+.imagebox {
+  background-color: $tertiary-color;
+  height: 200px;
+  width: 300px;
+  margin-top: -50px;
+  padding: 0;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
+.imagebox img {
+  height: 200px;
+  width: 300px;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+
+.article {
+  font-size: 18px;
+  margin-bottom: 25px;
+}

@@ -2,7 +2,7 @@
   =render partial: 'carousel'
 =render partial: 'layouts/menubar'
 .container.content
-  .row.articles
+  =render partial: 'news', locals: {news: @news}
 .container-fluid.footer
   #logo_beige
     %img{src: 'assets/logo-bez.png'}
