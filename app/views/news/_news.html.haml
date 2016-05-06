@@ -1,7 +1,7 @@
 .row
   .row.col-sm-4.newslist
     %h2
-      Aktualności
+      News
     -news.each_with_index do |n, i|
       -if i==0
         %div.snippet.active{'data-nid' => n.id}
