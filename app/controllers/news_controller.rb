@@ -1,7 +1,7 @@
 class NewsController < ApplicationController
 
   def index
-    @news = News.order('created_at desc').last(10).reverse
+    @news = News.order('created_at asc').last(10).reverse
   end
 
   def render_news
