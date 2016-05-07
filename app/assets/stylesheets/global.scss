@@ -86,8 +86,11 @@ body {
   width: 100%;
 }
 
-.footer div {
+.quarter {
   width: 25%;
+}
+.three-quarters {
+  width: 75%;
 }
 
 #logo_beige {
@@ -139,4 +142,45 @@ body {
   -webkit-box-shadow: 0px 0px 5px 1px $tertiary-color;
   -moz-box-shadow: 0px 0px 7px 1px $tertiary-color;
   box-shadow: 0px 0px 7px 1px $tertiary-color;
+}
+
+#carousel_partners {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.carousel .glyphicon-triangle-left, .carousel .glyphicon-triangle-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;  
+}
+#carousel_partners .carousel-inner {
+  text-align: center;
+}
+#carousel_partners img {
+  max-height: 150px;
+  max-width: 80%;
+  margin: auto;
+  display: inline-block;
+}
+.footnote p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.carousel-control {
+  color: $primary-color;
+}
+.carousel-control:hover {
+  color: $primary-color;
+}
+#carousel_partners .carousel-inner>.next,
+#carousel_partners .carousel-inner>.prev{
+    line-height: 150px;
 }
