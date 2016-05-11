@@ -190,20 +190,20 @@ body {
   background-color: $tertiary-color;
   color:  $primary-color;
   transition: 0.4s;
-  outline: thin dotted;
-  outline: 5px auto $tertiary-color;
+  outline: thin;
+  outline: 1px solid $tertiary-color;
   outline-offset: -2px;
 }
 .btn-submit:hover {
   background-color: $primary-color;
   color: $tertiary-color;
-  outline: thin dotted;
-  outline: 5px auto $tertiary-color;
+  outline: thin;
+  outline: 1px solid $tertiary-color;
   outline-offset: -2px;
 }
 .btn:focus {
-  outline: thin dotted;
-  outline: 5px auto $tertiary-color;
+  outline: thin;
+  outline: 1px solid $tertiary-color;
   outline-offset: -2px;
 }
 .form-control:focus {
