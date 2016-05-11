@@ -8810,51 +8810,6 @@ button.close {
     display: none !important;
   }
 }
-/* line 1, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-dark {
-  height: 100%;
-  background-color: #200E0A;
-  padding: calc(5% - 5px) 5% 5% 10%;
-}
-
-/* line 6, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-dark p {
-  font-family: "Josefin Slab", serif;
-  font-size: 18px;
-  text-align: justify;
-}
-
-/* line 11, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-dark h2 {
-  margin-top: 0px;
-}
-
-/* line 14, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-light {
-  background-color: #D2B37A;
-  height: 100%;
-}
-
-/* line 18, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-content {
-  margin-bottom: 5px;
-  color: #D2B37A;
-}
-
-/* line 22, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-span {
-  height: 5px;
-  background-color: #200E0A;
-}
-
-/* line 26, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.subsite-light img {
-  width: 85%;
-  height: auto;
-  margin: calc(5% - 5px) 10% 5% 5%;
-  display: inherit;
-}
-
 /*
   Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
   CSS from:       http://codepen.io/transportedman/pen/NPWRGq
@@ -8965,6 +8920,45 @@ button.close {
     transform: translate3d(0, 0, 0);
   }
 }
+/* line 1, /Users/przemek/my projects/biolife/app/assets/stylesheets/contact.scss */
+.subsite-small-holder {
+  margin-top: 20px;
+  background-color: #771B15;
+  padding: 0;
+  -ms-transform: rotate(-7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+
+/* line 9, /Users/przemek/my projects/biolife/app/assets/stylesheets/contact.scss */
+.subsite-small-holder img {
+  max-height: 100%;
+  max-width: 100%;
+  -ms-transform: rotate(7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
+
+/* line 17, /Users/przemek/my projects/biolife/app/assets/stylesheets/contact.scss */
+.contact-title {
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+/* line 23, /Users/przemek/my projects/biolife/app/assets/stylesheets/contact.scss */
+.disclaimer {
+  font-family: "Josefin Slab", serif;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
 /* line 1, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 body {
   font-family: "Cinzel", serif;
@@ -9077,25 +9071,30 @@ body {
   width: 25%;
 }
 
-/* line 93, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 92, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.three-quarters {
+  width: 75%;
+}
+
+/* line 96, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #logo_beige {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 97, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 100, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #logo_beige img {
   height: 175px;
   margin-top: 10px;
 }
 
-/* line 101, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 104, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #facebook {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 105, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 108, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #facebook #fb_background {
   display: block;
   height: 55px;
@@ -9104,19 +9103,19 @@ body {
   background-size: 100%;
 }
 
-/* line 112, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 115, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #fb_background img {
   height: 100%;
   width: auto;
   transition: 0.4s;
 }
 
-/* line 117, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 120, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #fb_background img:hover {
   opacity: 0;
 }
 
-/* line 120, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 123, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 .footnote {
   display: table-cell;
   vertical-align: middle;
@@ -9125,19 +9124,19 @@ body {
   font-size: 18px;
 }
 
-/* line 127, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 130, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 .content {
   position: relative;
   width: 100%;
   font-family: "Josefin Slab", serif;
 }
 
-/* line 132, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 135, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 .articles {
   height: 200px;
 }
 
-/* line 135, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 138, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 .footer-line {
   width: 65%;
   margin-left: 0px;
@@ -9147,15 +9146,14 @@ body {
   box-shadow: 0px 0px 7px 1px #771B15;
 }
 
-/* line 144, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 147, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #carousel_partners {
-  width: 50%;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 151, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 153, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 .carousel .glyphicon-triangle-left, .carousel .glyphicon-triangle-right {
   position: absolute;
   top: 50%;
@@ -9164,15 +9162,78 @@ body {
   display: inline-block;
 }
 
-/* line 159, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 161, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none;
 }
 
-/* line 162, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+/* line 164, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+#carousel_partners .carousel-inner {
+  text-align: center;
+}
+
+/* line 167, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
 #carousel_partners img {
   max-height: 150px;
+  max-width: 80%;
   margin: auto;
+  display: inline-block;
+}
+
+/* line 173, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.footnote p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 177, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.carousel-control {
+  color: #D2B37A;
+}
+
+/* line 180, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.carousel-control:hover {
+  color: #D2B37A;
+}
+
+/* line 183, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+#carousel_partners .carousel-inner > .next,
+#carousel_partners .carousel-inner > .prev {
+  line-height: 150px;
+}
+
+/* line 188, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.btn-submit {
+  font-family: "Cinzel", serif;
+  background-color: #771B15;
+  color: #D2B37A;
+  transition: 0.4s;
+  outline: thin dotted;
+  outline: 5px auto #771B15;
+  outline-offset: -2px;
+}
+
+/* line 197, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.btn-submit:hover {
+  background-color: #D2B37A;
+  color: #771B15;
+  outline: thin dotted;
+  outline: 5px auto #771B15;
+  outline-offset: -2px;
+}
+
+/* line 204, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.btn:focus {
+  outline: thin dotted;
+  outline: 5px auto #771B15;
+  outline-offset: -2px;
+}
+
+/* line 209, /Users/przemek/my projects/biolife/app/assets/stylesheets/global.scss */
+.form-control:focus {
+  border-color: #771B15;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #771B15;
+  box-shadow: inset 0 1px 1px #771B15;
 }
 
 /* line 1, /Users/przemek/my projects/biolife/app/assets/stylesheets/news.scss */
@@ -9268,4 +9329,59 @@ body {
 .article {
   font-size: 18px;
   margin-bottom: 25px;
+}
+
+/* line 1, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-dark {
+  font-family: "Josefin Slab", serif;
+  font-size: 18px;
+  text-align: justify;
+  height: 100%;
+  background-color: #200E0A;
+  padding: calc(5% - 5px) 5% 5% 10%;
+}
+
+/* line 9, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-dark h2 {
+  font-family: "Cinzel", serif;
+  margin-top: 0px;
+}
+
+/* line 13, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-light {
+  background-color: #D2B37A;
+  height: 100%;
+}
+
+/* line 17, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-content {
+  margin-bottom: 5px;
+  color: #D2B37A;
+}
+
+/* line 21, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-span {
+  height: 5px;
+  background-color: #200E0A;
+}
+
+/* line 25, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-light img {
+  width: 85%;
+  height: auto;
+  margin: calc(5% - 5px) 10% 5% 5%;
+  display: inherit;
+}
+
+/* line 32, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-light {
+  height: 100%;
+  background-color: #D2B37A;
+  color: #200E0A;
+  padding: calc(5% - 5px) 10% 5% 5%;
+}
+
+/* line 39, /Users/przemek/my projects/biolife/app/assets/stylesheets/subsite.scss */
+.subsite-light form {
+  font-family: "Josefin Slab", serif;
 }

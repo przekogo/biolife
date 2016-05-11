@@ -1,0 +1,29 @@
+.subsite-small-holder {
+  margin-top: 20px;
+  background-color: $tertiary-color;
+  padding: 0;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+.subsite-small-holder img {
+  max-height: 100%;
+  max-width: 100%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
+
+.contact-title {
+  font-family: $cinzel;
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.disclaimer {
+  font-family: $josefin;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}

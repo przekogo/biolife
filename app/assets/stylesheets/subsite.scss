@@ -1,0 +1,41 @@
+.subsite-dark {
+  font-family: $josefin;
+  font-size: 18px;
+  text-align: justify;
+  height: 100%;
+  background-color: $secondary-color;
+  padding: calc(5% - 5px) 5% 5% 10%;
+}
+.subsite-dark h2 {
+  font-family: $cinzel;
+  margin-top: 0px;
+}
+.subsite-light {
+  background-color: $primary-color;
+  height: 100%;
+}
+.subsite-content {
+  margin-bottom: 5px;
+  color: $primary-color;
+}
+.subsite-span {
+  height: 5px;
+  background-color: $secondary-color;
+}
+.subsite-light img {
+  width: 85%;
+  height: auto;
+  margin: calc(5% - 5px) 10% 5% 5%;
+  display: inherit;
+}
+
+.subsite-light {
+  height: 100%;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: calc(5% - 5px) 10% 5% 5%;
+}
+
+.subsite-light form {
+  font-family: $josefin;
+}

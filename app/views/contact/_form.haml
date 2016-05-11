@@ -1,0 +1,15 @@
+=form_tag contact_path, :method => 'get' do
+  .form-group
+    =text_field_tag :name, nil, class: 'form-control', placeholder: 'Imię i nazwisko lub nazwa firmy'
+  .form-group
+    =text_field_tag :email, nil, class: 'form-control', placeholder: 'Email'
+  .form-group
+    =text_area_tag :message, nil, class: 'form-control', rows: 5, placeholder: 'Treść wiadomości'
+  .row
+    .col-sm-6.col-sm-offset-3 
+      =submit_tag 'Dostarcz', class: 'btn btn-submit col-md-12'
+.row
+  %p.disclaimer
+    * Jeżeli interesuje Państwa pellet, bądź palnik wraz z transportem prosimy o uzupełnienie formularza o kod pocztowy miejsca rozładunku
+  %p.disclaimer
+    ** Zainteresowanych stałymi dostawami pelletu prosimy o podanie miesięcznej ilości, jaka Państwa interesuje

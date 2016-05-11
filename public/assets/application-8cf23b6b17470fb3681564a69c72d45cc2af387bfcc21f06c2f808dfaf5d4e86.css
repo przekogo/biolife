@@ -8811,44 +8811,44 @@ button.close {
   }
 }
 /* line 1, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-text {
+.subsite-dark {
   height: 100%;
   background-color: #200E0A;
   padding: calc(5% - 5px) 5% 5% 10%;
 }
 
 /* line 6, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-text p {
+.subsite-dark p {
   font-family: "Josefin Slab", serif;
   font-size: 18px;
   text-align: justify;
 }
 
 /* line 11, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-text h2 {
+.subsite-dark h2 {
   margin-top: 0px;
 }
 
 /* line 14, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-image {
+.subsite-light {
   background-color: #D2B37A;
   height: 100%;
 }
 
 /* line 18, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-content {
+.subsite-content {
   margin-bottom: 5px;
   color: #D2B37A;
 }
 
 /* line 22, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-span {
+.subsite-span {
   height: 5px;
   background-color: #200E0A;
 }
 
 /* line 26, /Users/przemek/my projects/biolife/app/assets/stylesheets/about.scss */
-.about-image img {
+.subsite-light img {
   width: 85%;
   height: auto;
   margin: calc(5% - 5px) 10% 5% 5%;
