@@ -194,7 +194,7 @@ body {
   outline: 1px solid $tertiary-color;
   outline-offset: -2px;
 }
-.btn-submit:hover {
+.btn-submit:hover, .btn-submit:focus {
   background-color: $primary-color;
   color: $tertiary-color;
   outline: thin;
