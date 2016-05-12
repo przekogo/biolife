@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'offer', to: 'offer#index'
   get 'pellet', to: 'pellet#index'
   get 'contact', to: 'contact#index'
+
+  post 'contact/mail', to: 'contact#mail', format: 'js'
 end

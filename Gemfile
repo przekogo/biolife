@@ -18,6 +18,8 @@ gem 'figaro' # global variables in application.yml
 
 gem 'haml'
 
+gem 'font-awesome-sass' #icons
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
