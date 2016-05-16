@@ -16,11 +16,37 @@
           %li#about
             =link_to 'O nas', about_path 
           %li#offer
-            =link_to 'Oferta', offer_path
+            %a{href: '#'}
+              Oferta
           %li#pellet
             =link_to 'Pellet', pellet_path
           %li#contact
             =link_to 'Kontakt', contact_path
+    .offers.col-sm-8.pull-right.slidup
+      .col-sm-3.offer
+        .offer-img-holder
+          %img{src: 'assets/modernizacja.jpg'}
+        %p
+          %span
+            modernizacja pieca
+      .col-sm-3.offer
+        .offer-img-holder
+          %img{src: 'assets/palniki.jpg'}
+        %p
+          %span
+            palniki
+      .col-sm-3.offer
+        .offer-img-holder
+          %img{src: 'assets/piece.jpg'}
+        %p
+          %span
+            piece
+      .col-sm-3.offer
+        .offer-img-holder
+          %img{src: 'assets/pellet-offer.jpg'}
+        %p
+          %span
+            pellet
 -if active=='home'
   .container
     .row

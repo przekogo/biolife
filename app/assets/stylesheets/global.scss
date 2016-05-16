@@ -40,7 +40,11 @@ body {
   background-color: $primary-color;
   font-family: $cinzel;
 }
-
+.menubar .row {
+  background-color: $primary-color;
+  position: relative;
+  z-index: 3;
+}
 .cut {
   margin: 0;
   padding: 0;
@@ -73,9 +77,9 @@ body {
   color: $primary-color;
   cursor: pointer;
 }
-.navbar-nav > li > a:focus {
-  background-color: $tertiary-color;
-  color: $primary-color;
+.nav > li > a:focus {
+  background: initial;
+  color: $secondary-color;
   outline: 0;
 }
 
@@ -143,7 +147,16 @@ body {
   -moz-box-shadow: 0px 0px 7px 1px $tertiary-color;
   box-shadow: 0px 0px 7px 1px $tertiary-color;
 }
-
+.offer-line {
+  z-index: 10;
+  width: 75%;
+  margin: 0 auto;
+  border-color: $tertiary-color;
+  -webkit-box-shadow: 0px 0px 5px 1px $tertiary-color;
+  -moz-box-shadow: 0px 0px 7px 1px $tertiary-color;
+  box-shadow: 0px 0px 7px 1px $tertiary-color;
+  transition: 0.4s;
+}
 #carousel_partners {
   height: 100%;
   display: table-cell;
@@ -186,4 +199,82 @@ body {
 }
 .justify {
   text-align: justify;
+}
+
+.dropdown:active {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.dropdown-menu>li {
+    display: table-cell;
+}
+.menu-img{
+  height: 200px;
+}
+.offers {
+  top: -150px;
+  opacity: 0;  
+  z-index: -1;
+  padding: 0;
+  color: $primary-color;
+  background-color: $secondary-color;
+  height: 175px;
+  transition: 0.6s;
+}
+.offers .offer {
+  padding-top: 10px;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.offers .offer:hover {
+  color: $primary-color;
+  background-color: $tertiary-color;
+  cursor: pointer;
+}
+.offers .offer:hover hr {
+  border-color: $secondary-color;
+  -webkit-box-shadow: 0px 0px 5px 1px $secondary-color;
+  -moz-box-shadow: 0px 0px 7px 1px $secondary-color;
+  box-shadow: 0px 0px 7px 1px $secondary-color;
+}
+.offers .offer:hover .offer-img-holder {
+  background-color: $secondary-color;
+}
+.offers .offer img {
+  margin-top: 3px;
+  position: relative;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
+.offers .offer p {
+  height: 33%;
+  width: 100%;
+  display: table;
+  line-height: 21px;
+}
+.offers .offer p span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.offer-img-holder {
+  display: inline-block;
+  position: relative;
+  height: 67%;
+  padding-bottom: 9px;
+  background-color: $tertiary-color;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+  transition: 0.4s;
+}
+#offer a.active {
+  background-color: $secondary-color;
+  color: $primary-color;
 }

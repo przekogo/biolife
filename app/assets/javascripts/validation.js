@@ -1,12 +1,16 @@
 $(document).on('focusout', 'form input, form textarea', function() {
-  resetValidationErrors();
-  validateForm($(this).closest('form'));
+  clearError($(this));
+  validateThis($(this));
 })
 
 function resetValidationErrors() {
   $('form input, form textarea').each(function(){
-    $(this).parent().children('span').remove();
+    clearError($(this));
   })
+}
+
+function clearError(field) {
+  field.parent().children('span').remove();
 }
 
 function isValidEmailAddress(emailAddress) {
@@ -17,27 +21,34 @@ function isValidEmailAddress(emailAddress) {
 function validateForm(form) {
   var valid = true;
   form.find('input, textarea').each(function(){
-    switch ($(this).prop('name')) {
-      case 'name':
-        if ($(this).val()=='') {
-          $(this).parent().append('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span><span class="help-block">Imię i nazwisko lub nazwa firmy nie może być puste.</span>')
-          valid = false
-        }
-        break;
-      case 'email':
-        if ($(this).val()=='' || !isValidEmailAddress( $(this).val() )) {
-          $(this).parent().append('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span><span class="help-block">Proszę podać prawidłowy adres e-mail.</span>')
-          valid = false
-        }
-        break;
-      case 'message':
-        if ($(this).val()=='') {
-          $(this).parent().append('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span><span class="help-block">Treść wiadomości nie może być pusta.</span>')
-          valid = false
-        }
-        break;
-    }  
+    if (validateThis($(this))==false) {
+      valid = false;
+    }
   })
-  console.log(valid);
   return valid;
+}
+
+function validateThis(field) {
+  switch (field.prop('name')) {
+    case 'name':
+      if (field.val()=='') {
+        field.parent().append('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span><span class="help-block">Imię i nazwisko lub nazwa firmy nie może być puste.</span>')
+        return false
+      }
+      break;
+    case 'email':
+      if (field.val()=='' || !isValidEmailAddress( field.val() )) {
+        field.parent().append('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span><span class="help-block">Proszę podać prawidłowy adres e-mail.</span>')
+        return false
+      }
+      break;
+    case 'message':
+      if (field.val()=='') {
+        field.parent().append('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span><span class="help-block">Treść wiadomości nie może być pusta.</span>')
+        return false
+      }
+      break;
+    default:
+      return true;
+  }  
 }
