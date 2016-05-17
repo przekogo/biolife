@@ -30,7 +30,7 @@ module Biolife
       :address              => "smtp.gmail.com",  
       :port                 => 587,  
       :domain               => "gmail.com",  
-      :user_name            => "instameminfo", #Your user name
+      :user_name            => "instameminfo@gmail.com", #Your user name
       :password             => "klapkipanawladka", # Your password
       :authentication       => "plain",  
       :enable_starttls_auto => true  
