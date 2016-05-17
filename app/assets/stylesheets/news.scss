@@ -53,19 +53,19 @@
 }
 .imagebox {
   background-color: $tertiary-color;
-  height: 200px;
-  width: 300px;
+  height: 270px;
+  width: 400px;
   margin-top: -50px;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding: 0;
   -ms-transform: rotate(7deg); /* IE 9 */
   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
   transform: rotate(7deg);
 }
 .imagebox img {
-  height: 200px;
-  width: 300px;
+  height: 270px;
+  width: 400px;
   -ms-transform: rotate(-7deg); /* IE 9 */
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
