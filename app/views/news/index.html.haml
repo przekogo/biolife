@@ -1,7 +1,8 @@
-.carousel.cut
-  =render partial: 'carousel'
-.container-fluid.header
-  =render partial: 'layouts/menubar', locals: {active: 'home'}
-.container.content
-  =render partial: 'news', locals: {news: @news}
-=render partial: 'layouts/footer'
+.body
+  .carousel.cut
+    =render partial: 'carousel'
+  .container-fluid.header
+    =render partial: 'layouts/menubar', locals: {active: 'home'}
+  .container.content
+    =render partial: 'layouts/submenu', locals: {news: @news}
+  =render partial: 'layouts/footer'

@@ -1,0 +1,35 @@
+-news ||= ''
+-pellet ||= false
+.row
+  -if news.present?
+    .row.col-sm-4.submenu.newslist
+      %h2
+        News
+      -news.each_with_index do |n, i| 
+        -if i==0
+          .snippet.active{'data-nid' => n.id}
+            .caret-right
+            =n.title
+            %span
+              =n.created_at.strftime("%d/%m/%y")
+        -else
+          .snippet{'data-nid' => n.id}
+            .caret-right
+            =n.title
+            %span
+              =n.created_at.strftime("%d/%m/%y")
+    .col-sm-8.article
+      =render partial: 'news/article', locals: {article: news.first}
+  -elsif pellet.present?
+    .row.col-sm-4.submenu.pelletlist
+      -@items.each_with_index do |n, i| 
+        -if i==0
+          .snippet.active{'data-partial' => n[:file]}
+            .caret-right
+            =n[:label]
+        -else
+          .snippet{'data-partial' => n[:file]}
+            .caret-right
+            =n[:label]
+    .col-sm-8.article
+      =render partial: 'pellet/about'

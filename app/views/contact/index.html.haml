@@ -1,51 +1,52 @@
-.container-fluid.menuspan
-  =render partial: 'layouts/menubar', locals: {active: 'contact'}
-.container-fluid.subsite-content
-  .row
-    .col-md-12.subsite-span
-  .row
-    .col-md-6.subsite-dark
-      %p.contact-title Biolife Arkadiusz Natorski
-      %hr.footer-line
-      .row
-        .col-md-6
-          .col-md-12
-            %p.text-left
-              Dane teleadresowe:
-              %br            
-              ul. Porucznika "Ostrego" 8
-              %br
-              26-600 Radom
-              %br
-              Polska
-              %br
-              NIP 796-001-46-77
-              %br
-              REGON 670169987
-          .col-md-12
-            %p.text-left
-              Salon wystawowy:
-              %br
-              ul. Strycharska 4
-              %br
-              26-600 Radom
-              %br
-              Polska              
-        .col-md-6
-          .col-md-12
-            %p.text-left
-              Właściciel firmy:
-              %br
-              Arkadiusz Natorski
-              %br
-              email:&nbspbiolife.natorski@gmail.com
-              %br
-              tel: +48 668-416-281
-          .col-md-12
-            .subsite-small-holder
-              %img{src: 'assets/contact.jpg'}
-    .col-md-6.subsite-light
-      %p.contact-title Napisz do nas
-      %hr.footer-line
-      =render 'form'
-=render partial: 'layouts/footer', locals: {content: 'partners'}
+.body
+  .container-fluid.menuspan
+    =render partial: 'layouts/menubar', locals: {active: 'contact'}
+  .container-fluid.subsite-content
+    .row
+      .col-md-12.subsite-span
+    .row
+      .col-md-6.subsite-dark
+        %p.contact-title Biolife Arkadiusz Natorski
+        %hr.footer-line
+        .row
+          .col-md-6
+            .col-md-12
+              %p.text-left
+                Dane teleadresowe:
+                %br            
+                ul. Porucznika "Ostrego" 8
+                %br
+                26-600 Radom
+                %br
+                Polska
+                %br
+                NIP 796-001-46-77
+                %br
+                REGON 670169987
+            .col-md-12
+              %p.text-left
+                Salon wystawowy:
+                %br
+                ul. Strycharska 4
+                %br
+                26-600 Radom
+                %br
+                Polska              
+          .col-md-6
+            .col-md-12
+              %p.text-left
+                Właściciel firmy:
+                %br
+                Arkadiusz Natorski
+                %br
+                email:&nbspbiolife.natorski@gmail.com
+                %br
+                tel: +48 668-416-281
+            .col-md-12
+              .subsite-small-holder
+                %img{src: 'assets/contact.jpg'}
+      .col-md-6.subsite-light
+        %p.contact-title Napisz do nas
+        %hr.footer-line
+        =render 'form'
+  =render partial: 'layouts/footer', locals: {content: 'partners'}

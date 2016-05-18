@@ -1,0 +1,6 @@
+.body
+  .container-fluid.menuspan
+    =render partial: 'layouts/menubar', locals: {active: 'pellet'}
+  .container.content
+    =render partial: 'layouts/submenu', locals: {pellet: true}
+  =render partial: 'layouts/footer'
