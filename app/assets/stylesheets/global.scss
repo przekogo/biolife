@@ -291,3 +291,21 @@ body {
   background-color: $secondary-color;
   color: $primary-color;
 }
+p.alternate-img {
+  min-height: 220px;
+}
+.justify p {
+  margin-bottom: 35px;
+}
+.table {
+  border-color: $secondary-color;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-color: $secondary-color;
+  border-width: 1px;
+}

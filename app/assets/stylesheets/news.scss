@@ -63,14 +63,18 @@
   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
   transform: rotate(7deg);
 }
+.imagebox.small {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
 .imagebox img {
-  height: 270px;
-  width: 400px;
+  height: inherit;
+  width: inherit;
   -ms-transform: rotate(-7deg); /* IE 9 */
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
 }
-
 .article {
   font-size: 18px;
   margin-bottom: 25px;
