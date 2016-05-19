@@ -235,6 +235,7 @@ body {
   background-color: $secondary-color;
   height: 175px;
   transition: 0.6s;
+  margin-right: -15px;
 }
 .offers .offer {
   color: $primary-color;
@@ -244,6 +245,7 @@ body {
   text-align: center;
   font-size: 20px;
   transition: 0.4s;
+  width: 20%;
 }
 .offers .offer:hover {
   color: $primary-color;
