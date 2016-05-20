@@ -1,0 +1,33 @@
+.body
+  .container-fluid.menuspan
+    =render partial: 'layouts/menubar', locals: {active: 'offer'}
+  .container.content
+    .row
+      .col-md-6.col-md-offset-3
+        %h2
+          Modernizacja kotłowni
+        %hr.article-hr
+    .row
+      .col-md-8.col-md-offset-2.justify.row
+        %p
+          Z uwagi na rosnące zainteresowanie energią ekologiczną oferujemy Państwu kompleksową usługę modernizacji już istniejących kotłowni domowych oraz instytucjonalnych o szerokim wachlarzu  mocy:  16kW  - 1 MW. Zmieniamy kosztowne lub przestarzałe rozwiązania grzewcze ( np. kotły olejowe lub opalane eko- groszkiem) na nowoczesne, ekonomiczne i przede wszystkim samoobsługowe kotłownie.
+        
+        .imagebox.small.pull-left
+          %img{src:'assets/wycena i projekt.jpg'}
+        %p.alternate-img
+          %strong Wycena i projekt
+          %br
+          Podczas pierwszej wizyty nasi fachowcy dokonują doboru właściwego palnika, konsultują potrzeby Klienta oraz przygotowują projekt. 
+        .imagebox.small.pull-right
+          %img{src:'assets/modernizacja pieca.jpg'}
+        %p.alternate-img
+          %strong Modernizacja
+          %br
+          Następnie  modernizujemy kotłownię, stosując optymalne dla klienta rozwiązania. W ramach naszej usługi oferujemy serwis gwarancyjny i pogwarancyjny. 
+        .imagebox.small.pull-left
+          %img{src:'assets/dostawy paliwa.jpg'}
+        %p.alternate-img
+          %strong Dostawy paliwa
+          %br
+          Dbając o kompleksową obsługę Klienta zapewniamy stałe dostawy paliwa – pelletu najwyższej jakości w atrakcyjnej cenie.
+  =render partial: 'layouts/footer'
