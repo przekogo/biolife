@@ -32,4 +32,17 @@
             .caret-right
             =n[:label]
     .col-sm-8.article
-      =render partial: 'pellet/about'
+      =render partial: 'piece/about'
+  -elsif furnaces.present?
+    .row.col-sm-4.submenu.pelletlist
+      -@items.each_with_index do |n, i| 
+        -if i==0
+          .snippet.active{'data-partial' => n[:file]}
+            .caret-right
+            =n[:label]
+        -else
+          .snippet{'data-partial' => n[:file]}
+            .caret-right
+            =n[:label]
+    .col-sm-8.article
+      =render partial: 'furnaces/about'
