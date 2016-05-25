@@ -20,7 +20,7 @@
               =n.created_at.strftime("%d/%m/%y")
     .col-sm-8.article
       =render partial: 'news/article', locals: {article: news.first}
-  -elsif pellet.present?
+  -else
     .row.col-sm-4.submenu.pelletlist
       -@items.each_with_index do |n, i| 
         -if i==0
@@ -32,17 +32,4 @@
             .caret-right
             =n[:label]
     .col-sm-8.article
-      =render partial: 'pellet/about'
-  -elsif furnaces.present?
-    .row.col-sm-4.submenu.pelletlist
-      -@items.each_with_index do |n, i| 
-        -if i==0
-          .snippet.active{'data-partial' => n[:file]}
-            .caret-right
-            =n[:label]
-        -else
-          .snippet{'data-partial' => n[:file]}
-            .caret-right
-            =n[:label]
-    .col-sm-8.article
-      =render partial: 'furnaces/about'
+      =render partial: @items.first[:file]

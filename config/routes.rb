@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'furnaces', to: 'offers#furnaces'
   get 'modernization', to: 'offers#modernization'
   get 'burners', to: 'offers#burners'
+  get 'granulate', to: 'offers#granulate'
 
   post 'contact/mail', to: 'contact#mail', format: 'js'
   post 'pellet/switch', to: 'pellet#switch'
