@@ -12,7 +12,13 @@ class OffersController < ApplicationController
 
   def modernization ; end
 
-  def burners ; end
+  def burners
+    @items = []
+    [['Palniki', 'burners/about'], ['Seria VIP', 'burners/vip'], ['Seria UNI', 'burners/uni'], ['Seria UNI MAX', 'burners/unimax'], ['Seria UNI MAX Perfect', 'burners/perfect']].each do |i|
+      @items << {label: i[0], file: i[1]}
+    end
+    render 'index'
+  end
 
   def granulate
     @items = []
