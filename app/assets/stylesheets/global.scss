@@ -296,6 +296,10 @@ body {
 p.alternate-img {
   min-height: 220px;
 }
+div.alternate-img {
+  margin-top: -15px;
+  margin-bottom: 35px;
+}
 .justify p {
   margin-bottom: 35px;
 }
@@ -310,4 +314,8 @@ p.alternate-img {
 .table > tfoot > tr > td {
   border-color: $secondary-color;
   border-width: 1px;
+}
+.table-image {
+  width: auto;
+  display: inline;
 }

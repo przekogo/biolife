@@ -10,7 +10,8 @@
           .snippet.active{'data-nid' => n.id}
             .caret-right
             =n.title
-            %span
+            %nobr
+            %span<>
               =n.created_at.strftime("%d/%m/%y")
         -else
           .snippet{'data-nid' => n.id}

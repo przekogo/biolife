@@ -1,0 +1,86 @@
+.body
+  .container-fluid.menuspan
+    =render partial: 'layouts/menubar', locals: {active: 'offer'}
+  .container.content
+    .row
+      .col-md-6.col-md-offset-3
+        %h2
+          Pellet
+        %hr.article-hr
+    .row.article
+      .col-md-8.col-md-offset-2.justify.row
+        %p
+          Ze względu na różne wymagania dotyczące koloru, bądź samej kaloryczności pelletu stworzyliśmy ofertę, w której zawarliśmy granulaty, których surowce się różnią, a co za tym idzie także kolor. Nasz pellet pakowany jest w 15 kg worki dla zwiększenia wygody użytkowania, ale udostępniamy także możliwość zamówienia pelletu w tzw. Big bagach (1000 kg) dla większych odbiorców. Nasz pellet jest produkowany tylko w polskich fabrykach, które słyną z wysokiej jakości i najlepszych cen.        
+        .imagebox.small.pull-left
+          %img{src:'assets/sosna.JPG'}
+        .alternate-img
+          %table.table.table-image
+            %thead
+              %tr
+                %th typ
+                %td Świerk
+            %tbody
+              %tr
+                %th średnica
+                %td 6mm
+              %tr
+                %th długość
+                %td 2mm - 3.5mm
+              %tr
+                %th popiół
+                %td max. 0.3%
+              %tr
+                %th wilgotność
+                %td max. 8%
+              %tr
+                %th wartość opałowa
+                %td min. 5 kWh / kg
+        .imagebox.small.pull-right
+          %img{src:'assets/sosna swierk.JPG'}
+        .alternate-img.text-right
+          %table.table.table-image.text-left
+            %thead
+              %tr
+                %th typ
+                %td Sosna-Świerk
+            %tbody
+              %tr
+                %th średnica
+                %td 6mm
+              %tr
+                %th długość
+                %td 3.5mm - 5mm
+              %tr
+                %th popiół
+                %td 0.5% &plusmn; 0.2%
+              %tr
+                %th wilgotność
+                %td max. 9%
+              %tr
+                %th wartość opałowa
+                %td min. 4.5 kWh / kg
+        .imagebox.small.pull-left
+          %img{src:'assets/buk.JPG'}
+        .alternate-img
+          %table.table.table-image.text-left
+            %thead
+              %tr
+                %th typ
+                %td Buk
+            %tbody
+              %tr
+                %th średnica
+                %td 6mm
+              %tr
+                %th długość
+                %td 2mm - 3.5mm
+              %tr
+                %th popiół
+                %td 0.7%
+              %tr
+                %th wilgotność
+                %td max. 8%
+              %tr
+                %th wartość opałowa
+                %td min. 5.2 kWh / kg
+  =render partial: 'layouts/footer'
