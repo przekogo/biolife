@@ -13,6 +13,13 @@ body {
   position: relative;
   min-height: 100%;
 }
+a, a:active, a:focus {
+  text-decoration: none;
+  color: $tertiary-color;
+}
+a:hover {
+  color: $secondary-color;
+}
 .carousel {
   position: relative;
   top: 0px;
