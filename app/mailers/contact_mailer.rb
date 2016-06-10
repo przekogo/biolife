@@ -3,7 +3,7 @@ class ContactMailer < ApplicationMailer
  
   def contact_email(params)
     @params = params
-    reciepent = (Rail.env=="production" ? 'biolife.natorski@gmail.com' : 'przeroog@gmail.com')
+    reciepent = (Rails.env=="production" ? 'biolife.natorski@gmail.com' : 'przeroog@gmail.com')
     mail(to: reciepent, subject: 'Kontakt przez stronę od ' + params[:name], from: params[:email])
   end
 end
