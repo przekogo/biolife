@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 
 gem 'rubygems-update', '~> 2.1', '>= 2.1.0.rc.1'
-gem 'rails', '4.2.5'
-gem 'pg'
+gem 'rails', '5.0.2'
+gem 'pg', '~> 0.18'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
@@ -44,9 +44,8 @@ group :development, :integration, :staging do
   gem 'capybara'
   gem 'rspec-wait'
   gem 'selenium-webdriver'
-  gem 'factory_girl_rails'
 end
 
 gem 'rails_12factor'
 
-ruby '2.3.0'
+ruby '2.4.1'
