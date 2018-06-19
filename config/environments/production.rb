@@ -28,9 +28,6 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
-  # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
-
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
@@ -78,13 +75,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
   config.assets.compile = true
-      config.action_mailer.smtp_settings = {  
-      :address              => "smtp.sendgrid.net",  
-      :port                 => 587,  
-      :domain               => "heroku.com",  
+      config.action_mailer.smtp_settings = {
+      :address              => "smtp.sendgrid.net",
+      :port                 => 587,
+      :domain               => "heroku.com",
       :user_name            => ENV['SENDGRID_USERNAME'], #Your user name
       :password             => ENV['SENDGRID_PASSWORD'], # Your password
-      :authentication       => "plain",  
-      :enable_starttls_auto => true  
+      :authentication       => "plain",
+      :enable_starttls_auto => true
    }
 end
