@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rubygems-update', '~> 2.1', '>= 2.1.0.rc.1'
+gem 'rubygems-update', '~> 2.7'
 gem 'rails', '5.2.0'
 gem 'pg', '~> 0.18'
 gem 'sass-rails', '~> 5.0'
