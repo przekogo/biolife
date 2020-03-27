@@ -2,13 +2,12 @@ source 'https://rubygems.org'
 
 
 gem 'rubygems-update', '~> 2.7'
-gem 'rails', '5.2.0'
-gem 'pg', '~> 0.18'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'rails', '6.0.2.2'
+gem 'pg'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'jbuilder'
 
 gem 'bootstrap-sass'
 
@@ -48,4 +47,4 @@ end
 
 gem 'rails_12factor'
 
-ruby '2.4.1'
+ruby '2.6.3'
